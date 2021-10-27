@@ -1,0 +1,34 @@
+.banner {
+  background-color: $secondary;
+  height: 100vh;
+  position: relative;
+  &:after {
+    content: '';
+    background-image: url("../img/img-cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  &--body {
+    text-align: center;
+    &--title,
+    &--content {
+      color: $color1;
+      max-width: 474px;
+      margin: auto;
+    }
+    &--title {
+      padding-top: 98px;
+    }
+    &--content {
+      line-height: 155.3%;
+    }
+  }
+}

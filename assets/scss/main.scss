@@ -9,7 +9,11 @@
 
 // Content
 @import 'header';
+@import 'banner';
 @import 'footer';
+
+// Responsive
+@import 'responsive/banner';
 
 a {
   text-decoration: none;

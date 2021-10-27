@@ -1,0 +1,32 @@
+@media screen and (max-width: 480px) {
+  .banner {
+    &--body {
+      &--title {
+        font-size: 62px;
+        line-height: 89px;
+      }
+    }
+    &:after {
+      height: 70vh;
+    }
+  }
+}
+
+@media screen and (max-height: 810px) {
+  .banner {
+    &:after {
+      height: 70vh;
+    }
+  }
+}
+
+@media screen and (max-height: 730px) {
+  .banner {
+    &--body {
+      &--title {
+        font-size: 48px;
+        line-height: 60px;
+      }
+    }
+  }
+}

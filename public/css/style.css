@@ -48,6 +48,17 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 82px;
+  font-weight: bold;
+  line-height: 96px;
+}
+
 @keyframes topToBottom {
   0% {
     margin-top: -100vh;
@@ -124,6 +135,7 @@ table {
   -moz-animation: topToBottom ease 2s;
   -o-animation: topToBottom ease 2s;
   -ms-animation: topToBottom ease 2s;
+  z-index: 999;
 }
 .header--menu--list {
   list-style: none;
@@ -133,8 +145,6 @@ table {
   padding: 13.5px 0;
 }
 .header--menu--list--item--link {
-  font-family: Karla;
-  font-style: normal;
   font-weight: bold;
   font-size: 42px;
   line-height: 103.5%;
@@ -179,6 +189,40 @@ table {
   transform: rotate(45deg);
 }
 
+.banner {
+  background-color: #C3DFEA;
+  height: 100vh;
+  position: relative;
+}
+.banner:after {
+  content: "";
+  background-image: url("../img/img-cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+.banner--body {
+  text-align: center;
+}
+.banner--body--title, .banner--body--content {
+  color: #1C2B9E;
+  max-width: 474px;
+  margin: auto;
+}
+.banner--body--title {
+  padding-top: 98px;
+}
+.banner--body--content {
+  line-height: 155.3%;
+}
+
 .footer--head {
   text-align: center;
 }
@@ -206,6 +250,26 @@ table {
   font-size: 14px;
   line-height: 16px;
   margin: auto 20px;
+}
+@media screen and (max-width: 480px) {
+  .banner--body--title {
+    font-size: 62px;
+    line-height: 89px;
+  }
+  .banner:after {
+    height: 70vh;
+  }
+}
+@media screen and (max-height: 810px) {
+  .banner:after {
+    height: 70vh;
+  }
+}
+@media screen and (max-height: 730px) {
+  .banner--body--title {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 a {
   text-decoration: none;

@@ -35,14 +35,13 @@
     -moz-animation: topToBottom ease 2s;
     -o-animation: topToBottom ease 2s;
     -ms-animation: topToBottom ease 2s;
+    z-index: 999;
     &--list {
       list-style: none;
       &--item {
         text-align: center;
         padding: 13.5px 0;
         &--link {
-          font-family: Karla;
-          font-style: normal;
           font-weight: bold;
           font-size: 42px;
           line-height: 103.5%;
