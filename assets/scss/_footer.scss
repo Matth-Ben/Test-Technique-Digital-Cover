@@ -1,0 +1,33 @@
+.footer {
+  &--head {
+    text-align: center;
+    &--logo {
+    }
+    &--text {
+      color: $primary;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 33px;
+      text-transform: uppercase;
+      margin: 25px auto 33px;
+    }
+  }
+  &--body {
+    background-color: $secondary;
+    min-height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--list {
+      list-style: none;
+      text-align: center;
+      &--item {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 16px;
+        margin: auto 20px;
+        &--link {}
+      }
+    }
+  }
+}
