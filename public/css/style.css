@@ -100,12 +100,14 @@ h1 {
   }
 }
 .header--nav {
-  position: absolute;
+  align-items: center;
+  display: flex;
   top: 24px;
   right: 60px;
   left: 60px;
-  display: flex;
-  align-items: center;
+  margin: auto;
+  max-width: 1440px;
+  position: absolute;
   z-index: 9999;
 }
 .header--nav--logo {
@@ -202,6 +204,8 @@ h1 {
   background-size: cover;
   display: block;
   height: 100vh;
+  margin: auto;
+  max-width: 1440px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -223,6 +227,9 @@ h1 {
   line-height: 155.3%;
 }
 
+.footer {
+  margin-top: 37px;
+}
 .footer--head {
   text-align: center;
 }
@@ -269,6 +276,15 @@ h1 {
   .banner--body--title {
     font-size: 48px;
     line-height: 60px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .footer--body {
+    padding: 30px 0;
+  }
+  .footer--body--list--item {
+    display: block;
+    margin: 15px 20px;
   }
 }
 a {

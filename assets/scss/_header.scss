@@ -1,11 +1,13 @@
 .header {
   &--nav {
-    position: absolute;
+    align-items: center;
+    display: flex;
     top: 24px;
     right: 60px;
     left: 60px;
-    display: flex;
-    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+    position: absolute;
     z-index: 9999;
     &--logo {
       margin-left: 0;
