@@ -1,1 +1,13 @@
+// Variables
 @import 'font';
+@import 'colors';
+
+// Animations
+@import 'animations/topToBottom';
+
+// Content
+@import 'header';
+
+a {
+  text-decoration: none;
+}
