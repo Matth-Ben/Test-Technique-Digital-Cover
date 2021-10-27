@@ -8,6 +8,10 @@ $responsive: ['sm', 'md', 'lg'];
   flex-wrap: wrap;
 }
 
+.row-align-center {
+  align-items: center;
+}
+
 .grid {
   display: grid;
   overflow: hidden;
