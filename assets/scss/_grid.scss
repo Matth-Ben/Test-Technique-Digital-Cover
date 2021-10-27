@@ -1,9 +1,11 @@
 $cols: 12;
 $gutter: 5px;
 $prefix: col;
+$responsive: ['sm', 'md', 'lg'];
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .grid {
@@ -35,7 +37,25 @@ $prefix: col;
   order: 1;
 }
 
+@media screen and (max-width: 1440px){
+  @for $i from 1 through $cols {
+    .#{$prefix}#{$i}lg {
+      $w: 100% / $cols * $i;
+      flex-basis: $w;
+      box-sizing: border-box;
+    }
+  }
+}
+
 @media screen and (max-width: 768px){
+  @for $i from 1 through $cols {
+    .#{$prefix}#{$i}md {
+      $w: 100% / $cols * $i;
+      flex-basis: $w;
+      box-sizing: border-box;
+    }
+  }
+
   .row {
     &.column-sm {
       flex-direction: column;
@@ -48,5 +68,15 @@ $prefix: col;
 
   .order-sm-1 {
     order: 1;
+  }
+}
+
+@media screen and (max-width: 474px){
+  @for $i from 1 through $cols {
+    .#{$prefix}#{$i}sm {
+      $w: 100% / $cols * $i;
+      flex-basis: $w;
+      box-sizing: border-box;
+    }
   }
 }
