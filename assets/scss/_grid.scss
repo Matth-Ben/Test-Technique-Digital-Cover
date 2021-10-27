@@ -1,0 +1,52 @@
+$cols: 12;
+$gutter: 5px;
+$prefix: col;
+
+.row {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  overflow: hidden;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 0;
+}
+
+@for $i from 1 through $cols {
+  .grid#{$i} {
+    grid-template-columns: repeat( $i, 1fr);
+  }
+}
+
+@for $i from 1 through $cols {
+  .#{$prefix}#{$i} {
+    $w: 100% / $cols * $i;
+    flex-basis: $w;
+    box-sizing: border-box;
+  }
+}
+
+.order-0 {
+  order: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+@media screen and (max-width: 768px){
+  .row {
+    &.column-sm {
+      flex-direction: column;
+    }
+  }
+
+  .order-sm-0 {
+    order: 0;
+  }
+
+  .order-sm-1 {
+    order: 1;
+  }
+}
