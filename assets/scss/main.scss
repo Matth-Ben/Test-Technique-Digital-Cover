@@ -13,10 +13,12 @@
 @import 'header';
 @import 'banner';
 @import 'testimonial';
+@import 'news';
 @import 'footer';
 
 // Responsive
 @import 'responsive/banner';
+@import 'responsive/news';
 @import 'responsive/footer';
 
 a {

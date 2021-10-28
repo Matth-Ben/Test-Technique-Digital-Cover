@@ -1,0 +1,42 @@
+@media screen and (max-width: 1024px) {
+  .news {
+    &--item {
+      padding-left: 0;
+      &:nth-child(2n) {
+        padding-right: 0;
+      }
+      &--content {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news {
+    &--item {
+      &:nth-child(2n) {
+        .news--item {
+          &--img {
+            float: initial;
+          }
+        }
+      }
+      &--img {
+        display: block;
+        float: initial;
+        margin: 50px auto 0;
+      }
+      &--content {
+        &--title,
+        &--text,
+        .btn {
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

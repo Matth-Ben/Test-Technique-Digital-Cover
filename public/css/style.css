@@ -87,6 +87,7 @@ p {
 .btn {
   display: flex;
   align-items: center;
+  width: fit-content;
 }
 .btn:hover .news--item--content--btn {
   color: #FFFFFF;
@@ -761,6 +762,33 @@ p {
   margin: 26px 0;
   max-width: 473px;
 }
+.news--item {
+  padding-left: 121px;
+  margin-bottom: 63px;
+}
+.news--item:nth-child(2n) {
+  padding-left: 0;
+  padding-right: 186px;
+}
+.news--item:nth-child(2n) .news--item--img {
+  float: left;
+}
+.news--item--img {
+  float: right;
+  height: auto;
+  max-width: 656px;
+  width: 100%;
+}
+.news--item--content--title {
+  font-size: 40px;
+  line-height: 47px;
+  max-width: 528px;
+}
+.news--item--content--text {
+  max-width: 528px;
+  margin: 28px 0 39px;
+}
+
 .footer {
   margin-top: 37px;
 }
@@ -810,6 +838,34 @@ p {
   .banner--body--title {
     font-size: 48px;
     line-height: 60px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .news--item {
+    padding-left: 0;
+  }
+  .news--item:nth-child(2n) {
+    padding-right: 0;
+  }
+  .news--item--content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news--item:nth-child(2n) .news--item--img {
+    float: initial;
+  }
+  .news--item--img {
+    display: block;
+    float: initial;
+    margin: 50px auto 0;
+  }
+  .news--item--content--title, .news--item--content--text,
+.news--item--content .btn {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
 }
 @media screen and (max-width: 680px) {
