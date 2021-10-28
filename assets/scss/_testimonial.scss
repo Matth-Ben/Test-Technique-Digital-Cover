@@ -45,6 +45,7 @@
     &--list {
       text-align: center;
       &--item {
+        cursor: pointer;
         font-size: 32px;
         line-height: 40px;
         padding: 22px 0;
@@ -110,15 +111,24 @@
     &--content {
       &--list {
         margin: 45px 121px 70px 150px;
+        position: relative;
         &--item {
           background-color: #F6F6F6;
-          display: none;
+          display: block;
           padding: 50px 61px 35px 121px;
-          position: relative;
+          position: absolute;
           margin: auto;
           width: fit-content;
+          opacity: 0;
+          right: -100%;
+          transition: 1s;
+          top: 0;
+          bottom: 0;
           &.active {
-            display: block;
+            position: relative;
+            opacity: 1;
+            transition: 1s;
+            right: 0;
           }
           &--img {
             border-radius: 50%;

@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+  .testimonial {
+    &--body {
+      &--list {
+        &--item {
+          &--arrow {
+            margin-left: 40px;
+          }
+        }
+      }
+      &--content {
+        &--list {
+          margin: 85px 25px 70px;
+          &--item {
+            padding: 20px 50px 35px;
+            &--img {
+              top: -80px;
+              left: 85px;
+              margin: initial;
+            }
+            &--title {
+              margin-top: 65px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
