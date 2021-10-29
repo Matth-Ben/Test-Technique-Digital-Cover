@@ -1,16 +1,36 @@
+@font-face {
+  font-family: "Karla";
+  src: url("../fonts/Karla/Karla-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karla Borld";
+  src: url("../fonts/Karla/Karla-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+
 $karla: "Karla", sans-serif;
+$karlaBold: "Karla Bold", sans-serif;
+$ssp: "Source Sans Pro", sans-serif;
 
 html {
-  font-family: $karla;
+  font-family: $ssp;
 }
 
 h1 {
+  font-family: $karla;
   font-size: 82px;
   font-weight: bold;
   line-height: 96px;
 }
 
 h2 {
+  font-family: $karla;
   font-weight: bold;
   font-size: 60px;
   line-height: 70px;

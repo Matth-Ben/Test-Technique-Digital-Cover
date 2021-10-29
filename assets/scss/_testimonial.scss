@@ -9,13 +9,30 @@
       height: 75px;
       width: 60px;
       margin: auto;
+      &.animation {
+        .testimonial--head--icon--dash {
+          &:nth-of-type(1) {
+            animation:dispayDashTop 1.6s forwards;
+            transition:1s ease forwards;
+            transform: rotate(133.25deg);
+          }
+          &:nth-of-type(2) {
+            animation:dispayDashMiddle 1.3s forwards;
+            transition:1s ease forwards;
+          }
+          &:nth-of-type(3) {
+            animation:dispayDashBottom 1s forwards;
+            transition:1s ease forwards;
+          }
+        }
+      }
       &--dash {
         width: 7.12px;
         height: 30.87px;
         background: #FE460D;
         position: absolute;
         &:nth-of-type(1) {
-          transform: rotate(-33.25deg);
+          transform: rotate(133.25deg);
           top: 0;
           left: 17px;
         }
@@ -27,13 +44,14 @@
           margin: auto;
         }
         &:nth-of-type(3) {
-          transform: rotate(-131.66deg);
+          transform: rotate(49.66deg);
           bottom: 0px;
           left: 0;
         }
       }
     }
     &--title {
+      font-family: $karlaBold;
       margin-top: 27px;
       text-transform: uppercase;
     }

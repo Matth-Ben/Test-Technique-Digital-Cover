@@ -1,10 +1,11 @@
+AOS.init();
+
+// Active menu
 let burger = document.querySelector(".burger");
 let menu = document.querySelector(".header");
 burger.addEventListener("click", () => menu.classList.toggle("activebrgr"));
 
-let linkTestimonial = document.querySelector(".testimonial--body--list--item--link").href
-console.log(linkTestimonial)
-
+// Animation block content testimonial
 function toggleItem(elem) {
     for (var i = 0; i < elem.length; i++) {
         elem[i].addEventListener("click", function(e) {
@@ -29,3 +30,28 @@ function toggleItem(elem) {
     };
 }
 toggleItem(document.querySelectorAll('.testimonial--body--list--item--link'));
+
+
+// Animation dash icon testimonial
+const charts = document.getElementsByClassName( "testimonial--head--icon" );
+function isVisible ( element ) {
+    const
+        viewPortHeight = window.innerHeight,
+        scrollTop = window.scrollY,
+        currElementPosY = element.offsetTop,
+        elementHeight = element.offsetHeight;
+    return ( currElementPosY + elementHeight > scrollTop && currElementPosY < ( viewPortHeight + scrollTop ) )
+}
+
+function animateDashWhenVisible ( chart ) {
+    if ( isVisible( chart[0] )  ) {
+        chart[0].classList.add("animation");
+    } else {
+        chart[0].classList.remove("animation");
+    }
+}
+
+window.addEventListener( 'scroll', function () {
+    animateDashWhenVisible( charts );
+} );
+animateDashWhenVisible( charts );

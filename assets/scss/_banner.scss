@@ -17,12 +17,15 @@
     right: 0;
     left: 0;
     width: 100%;
+    animation:an 1s forwards;
+    transition:1s ease forwards;
   }
   &--body {
     text-align: center;
     &--title,
     &--content {
       color: $color1;
+      font-family: $karla;
       max-width: 474px;
       margin: auto;
     }

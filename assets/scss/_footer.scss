@@ -24,10 +24,13 @@
       text-align: center;
       &--item {
         display: inline-block;
+        font-family: $karla;
         font-size: 14px;
         line-height: 16px;
         margin: auto 20px;
-        &--link {}
+        &--link {
+          color: $dark;
+        }
       }
     }
   }
