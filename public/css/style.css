@@ -996,6 +996,11 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
   transition: 0.3s;
