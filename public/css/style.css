@@ -806,6 +806,9 @@ p {
   -webkit-transform: rotate(-45deg);
   transition: 0.4s;
 }
+.testimonial--body--content {
+  overflow-x: hidden;
+}
 .testimonial--body--content--list {
   margin: 45px 121px 70px 150px;
   position: relative;
